@@ -1,0 +1,16 @@
+@use '../abstract/' as *;
+
+.header {
+  text-align: center;
+
+  &__title {
+    margin-top: 5.25rem;
+    font-size: 1.515rem;
+    font-weight: 200;
+    color: $clr-neutral-dark;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use '../abstract' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
+  padding: 1.5rem 2rem;
+  background: white;
+
+  &__text > * {
+    margin-block: 0;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    color: $clr-neutral-dark;
+  }
+
+  &__body {
+    font-size: 0.85rem;
+  }
+
+  &__icon {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  &--supervisor {
+    border-color: $clr-supervisor;
+  }
+
+  &--team {
+    border-color: $clr-team;
+  }
+
+  &--karma {
+    border-color: $clr-karma;
+  }
+
+  &--calculator {
+    border-color: $clr-calculator;
+  }
+}

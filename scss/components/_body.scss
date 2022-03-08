@@ -1,0 +1,9 @@
+@use '../abstract/' as *;
+
+main {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-block: 4rem;
+}

@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 0.9375rem;
+
+  font-family: 'Poppins', sans-serif;
+  color: $clr-neutral;
+
+  background: $clr-neutral-light;
+
+  & > * {
+    margin-inline: 2rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
