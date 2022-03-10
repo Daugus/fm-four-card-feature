@@ -4,6 +4,20 @@ main {
   display: grid;
 
   grid-template-columns: 1fr;
+  grid-template-areas: 'supervisor' 'team' 'karma' 'calculator';
   gap: 1.5rem;
-  margin-block: 4rem;
+  margin-block: 3.8rem 4rem;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      '. team .'
+      'supervisor team calculator'
+      'supervisor karma calculator'
+      '. karma .';
+
+    gap: 1.875rem;
+    max-width: 76.875vw;
+    margin-top: 3.9rem;
+  }
 }
